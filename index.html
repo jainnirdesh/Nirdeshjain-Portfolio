@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nirdesh Jain - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Nirdesh Jain</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#research" class="nav-link">Research</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#certificates" class="nav-link">Certificates</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="highlight">Nirdesh Jain</span>
+                    </h1>
+                    <p class="hero-subtitle">B.Tech CSE in Data Science Student & Aspiring Data Scientist</p>
+                    <p class="hero-description">
+                        Passionate about data-driven solutions and building intelligent systems through machine learning and analytics.
+                        Currently pursuing my B.Tech in Computer Science and Engineering with specialization in Data Science.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#research" class="btn btn-secondary">
+                            <i class="fas fa-file-alt"></i> Research Papers
+                        </a>
+                        <a href="Nirdesh_Jain.pdf" target="_blank" class="btn btn-secondary">
+                            <i class="fas fa-download"></i> Download CV
+                        </a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/jainnirdesh" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/nirdeshhjain/" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://x.com/jnirdesh" target="_blank" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/nirdeshjain_" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-container">
+                        <img src="profile-image.svg" alt="Nirdesh Jain" class="profile-img">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know more about who I am and what I do</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Hello! I'm Nirdesh Jain</h3>
+                    <p>
+                        I'm a passionate Data Science student with a strong foundation in machine learning, data analytics,
+                        and software development. Currently pursuing my B.Tech in Computer Science and Engineering with 
+                        specialization in Data Science, I'm always eager to learn new technologies and apply them to solve 
+                        real-world problems through data-driven insights.
+                    </p>
+                    <p>
+                        My journey in data science has been driven by curiosity about extracting meaningful patterns from data
+                        and creating intelligent systems. I enjoy working on challenging projects that involve machine learning,
+                        statistical analysis, and building predictive models that can make a real impact.
+                    </p>
+                    
+                    <div class="education-section">
+                        <h4><i class="fas fa-graduation-cap"></i> Education</h4>
+                        <div class="education-item">
+                            <h5>B.Tech in Computer Science and Engineering</h5>
+                            <p><strong>Specialization:</strong> Data Science</p>
+                            <p><strong>Current Year:</strong> 3rd Year (2023-2027)</p>
+                            <p>Focus areas: Machine Learning, Data Analytics, Statistical Computing, Big Data Technologies</p>
+                        </div>
+                    </div>
+
+                    <div class="skills-section">
+                        <h4><i class="fas fa-code"></i> Technical Skills</h4>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <i class="fab fa-python"></i>
+                                <span>Python</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-chart-line"></i>
+                                <span>Machine Learning</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-database"></i>
+                                <span>Data Analysis</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-chart-bar"></i>
+                                <span>Data Visualization</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-js-square"></i>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-brain"></i>
+                                <span>Deep Learning</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-html5"></i>
+                                <span>HTML5</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-css3-alt"></i>
+                                <span>CSS3</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-calculator"></i>
+                                <span>Statistics</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-server"></i>
+                                <span>Big Data</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-git-alt"></i>
+                                <span>Git</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-database"></i>
+                                <span>SQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <h3>20+</h3>
+                        <p>Projects Completed</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>3</h3>
+                        <p>Research Papers</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>8+</h3>
+                        <p>Data Science Certifications</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Data Science Projects</h2>
+                <p class="section-subtitle">Here are some of my data science and software development projects that showcase my skills</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="project1.svg" alt="Music Player">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/jainnirdesh/MusicPlayer" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/jainnirdesh/MusicPlayer" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Music Player Application</h3>
+                        <p>A feature-rich music player web application with modern UI, playlist management, and audio controls. Built with vanilla JavaScript for smooth performance.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="project2.svg" alt="Expense Tracker">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/jainnirdesh/ExpenseTracker" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/jainnirdesh/ExpenseTracker" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Expense Tracker</h3>
+                        <p>A comprehensive expense tracking application that helps users manage their finances with categorization, charts, and detailed analytics.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">Local Storage</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="project3.svg" alt="Chat Application">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/jainnirdesh/ChatApplication" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/jainnirdesh/ChatApplication" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Real-time Chat Application</h3>
+                        <p>A modern real-time chat application with user authentication, message history, and responsive design for seamless communication.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="project4.svg" alt="EduConnect">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/jainnirdesh/EduConnect" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/jainnirdesh/EduConnect" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>EduConnect - Educational Platform</h3>
+                        <p>A comprehensive educational platform connecting students and teachers with features like course management, dashboard, and learning resources.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="project5.svg" alt="Student Performance Analytics">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/jainnirdesh/Using-Predictive-Analytics-to-Improve-Student-Performance" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/jainnirdesh/Using-Predictive-Analytics-to-Improve-Student-Performance" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Student Performance Analytics</h3>
+                        <p>A data science project using predictive analytics to analyze and improve student performance with comprehensive data visualization and insights.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Data Science</span>
+                            <span class="tech-tag">Analytics</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="project6.svg" alt="YouTube Downloader">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/jainnirdesh/ytdownloader" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/jainnirdesh/ytdownloader" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>YouTube Downloader</h3>
+                        <p>A Python-based YouTube video downloader with user-friendly interface and multiple format support for downloading videos and audio.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">API Integration</span>
+                            <span class="tech-tag">GUI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Papers Section -->
+    <section id="research" class="research">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Research Papers</h2>
+                <p class="section-subtitle">Academic research contributions and publications</p>
+            </div>
+            <div class="research-content">
+                <div class="research-grid">
+                    <div class="research-card">
+                        <div class="research-header">
+                            <div class="research-icon">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <div class="research-info">
+                                <h3>AI Innovations for Wildlife Preservation: An Introductory Guide</h3>
+                                <p class="research-type">Artificial Intelligence & Environmental Science</p>
+                                <p class="research-date">February 2025</p>
+                            </div>
+                        </div>
+                        <div class="research-content-text">
+                            <p>A comprehensive guide exploring the application of artificial intelligence technologies in wildlife conservation and environmental preservation. The research covers innovative AI solutions for species monitoring, habitat analysis, and conservation strategies.</p>
+                        </div>
+                        <div class="research-actions">
+                            <a href="https://doi.org/10.4018/979-8-3693-6935-7.ch001" target="_blank" class="btn btn-outline">
+                                <i class="fas fa-external-link-alt"></i> View Publication
+                            </a>
+                            <a href="Nirdesh_Jain.pdf" target="_blank" class="btn btn-outline">
+                                <i class="fas fa-file-pdf"></i> View Paper
+                            </a>
+                        </div>
+                        <div class="research-tags">
+                            <span class="research-tag">Artificial Intelligence</span>
+                            <span class="research-tag">Wildlife Conservation</span>
+                            <span class="research-tag">Environmental Science</span>
+                            <span class="research-tag">Machine Learning</span>
+                        </div>
+                    </div>
+
+                    <div class="research-card">
+                        <div class="research-header">
+                            <div class="research-icon">
+                                <i class="fas fa-industry"></i>
+                            </div>
+                            <div class="research-info">
+                                <h3>Industrial Automation and Quantum Computing</h3>
+                                <p class="research-type">Industrial Technology & Quantum Systems</p>
+                                <p class="research-date">December 2024</p>
+                            </div>
+                        </div>
+                        <div class="research-content-text">
+                            <p>An exploration of the intersection between industrial automation systems and quantum computing technologies. The research investigates how quantum computing can revolutionize manufacturing processes and industrial efficiency.</p>
+                        </div>
+                        <div class="research-actions">
+                            <a href="https://doi.org/10.1515/9783111354842-007" target="_blank" class="btn btn-outline">
+                                <i class="fas fa-external-link-alt"></i> View Publication
+                            </a>
+                            <a href="Nirdesh_Jain.pdf" target="_blank" class="btn btn-outline">
+                                <i class="fas fa-file-pdf"></i> View Paper
+                            </a>
+                        </div>
+                        <div class="research-tags">
+                            <span class="research-tag">Quantum Computing</span>
+                            <span class="research-tag">Industrial Automation</span>
+                            <span class="research-tag">Manufacturing</span>
+                            <span class="research-tag">Technology Innovation</span>
+                        </div>
+                    </div>
+
+                    <div class="research-card">
+                        <div class="research-header">
+                            <div class="research-icon">
+                                <i class="fas fa-tools"></i>
+                            </div>
+                            <div class="research-info">
+                                <h3>Hybrid Composite Materials: Fabrication and Characterization with Friction Stir Welding</h3>
+                                <p class="research-type">Materials Science & Engineering</p>
+                                <p class="research-date">June 2024</p>
+                            </div>
+                        </div>
+                        <div class="research-content-text">
+                            <p>A comprehensive study on the fabrication and characterization of hybrid composite materials using friction stir welding techniques. The research focuses on material properties, structural integrity, and manufacturing processes.</p>
+                        </div>
+                        <div class="research-actions">
+                            <a href="https://doi.org/10.4018/979-8-3693-3993-0.ch001" target="_blank" class="btn btn-outline">
+                                <i class="fas fa-external-link-alt"></i> View Publication
+                            </a>
+                            <a href="Nirdesh_Jain.pdf" target="_blank" class="btn btn-outline">
+                                <i class="fas fa-file-pdf"></i> View Paper
+                            </a>
+                        </div>
+                        <div class="research-tags">
+                            <span class="research-tag">Materials Science</span>
+                            <span class="research-tag">Composite Materials</span>
+                            <span class="research-tag">Friction Stir Welding</span>
+                            <span class="research-tag">Engineering</span>
+                        </div>
+                    </div>
+
+                    <div class="research-card">
+                        <div class="research-header">
+                            <div class="research-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div class="research-info">
+                                <h3>Anxiety's Impact: Mind, Body, Solutions</h3>
+                                <p class="research-type">Psychology & Mental Health</p>
+                                <p class="research-date">December 2023</p>
+                            </div>
+                        </div>
+                        <div class="research-content-text">
+                            <p>An interdisciplinary study examining the psychological and physiological impacts of anxiety disorders, exploring comprehensive solutions and intervention strategies for mental health improvement.</p>
+                        </div>
+                        <div class="research-actions">
+                            <a href="https://doi.org/10.25215/9189764668.ch007" target="_blank" class="btn btn-outline">
+                                <i class="fas fa-external-link-alt"></i> View Publication
+                            </a>
+                            <a href="Nirdesh_Jain.pdf" target="_blank" class="btn btn-outline">
+                                <i class="fas fa-file-pdf"></i> View Paper
+                            </a>
+                        </div>
+                        <div class="research-tags">
+                            <span class="research-tag">Psychology</span>
+                            <span class="research-tag">Mental Health</span>
+                            <span class="research-tag">Anxiety Research</span>
+                            <span class="research-tag">Healthcare</span>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="certificates">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Certifications & Achievements</h2>
+                <p class="section-subtitle">Data Science certifications and professional achievements</p>
+            </div>
+            <div class="certificates-content">
+                <div class="certificates-grid">
+                    <div class="certificate-card">
+                        <div class="certificate-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="certificate-info">
+                            <h3>Cybersecurity Challenge 2025</h3>
+                            <p class="certificate-issuer">K.R. Mangalam University</p>
+                            <p class="certificate-date">April 2025</p>
+                            <p class="certificate-description">Leadership and community organizing in cybersecurity challenges, demonstrating expertise in security practices and team coordination.</p>
+                        </div>
+                        <div class="certificate-actions">
+                            <a href="Nirdesh_Jain.pdf" target="_blank" class="btn btn-certificate">
+                                <i class="fas fa-certificate"></i> View Certificate
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="certificate-card">
+                        <div class="certificate-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="certificate-info">
+                            <h3>Machine Learning with R</h3>
+                            <p class="certificate-issuer">IBM Career Education Program</p>
+                            <p class="certificate-date">April 2025</p>
+                            <p class="certificate-description">Advanced machine learning techniques using R programming language for statistical analysis and predictive modeling.</p>
+                        </div>
+                        <div class="certificate-actions">
+                            <a href="Nirdesh_Jain.pdf" target="_blank" class="btn btn-certificate">
+                                <i class="fas fa-certificate"></i> View Certificate
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="certificate-card">
+                        <div class="certificate-icon">
+                            <i class="fab fa-microsoft"></i>
+                        </div>
+                        <div class="certificate-info">
+                            <h3>Power Automate Applied Skills</h3>
+                            <p class="certificate-issuer">Microsoft</p>
+                            <p class="certificate-date">February 2025</p>
+                            <p class="certificate-description">Create and manage automated processes using Power Automate for business process optimization.</p>
+                        </div>
+                        <div class="certificate-actions">
+                            <a href="Nirdesh_Jain.pdf" target="_blank" class="btn btn-certificate">
+                                <i class="fas fa-certificate"></i> View Certificate
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="certificate-card">
+                        <div class="certificate-icon">
+                            <i class="fab fa-microsoft"></i>
+                        </div>
+                        <div class="certificate-info">
+                            <h3>Power Apps Canvas Apps</h3>
+                            <p class="certificate-issuer">Microsoft</p>
+                            <p class="certificate-date">February 2025</p>
+                            <p class="certificate-description">Create and manage canvas apps with Power Apps for custom business application development.</p>
+                        </div>
+                        <div class="certificate-actions">
+                            <a href="Nirdesh_Jain.pdf" target="_blank" class="btn btn-certificate">
+                                <i class="fas fa-certificate"></i> View Certificate
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="certificate-card">
+                        <div class="certificate-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="certificate-info">
+                            <h3>AI Models with Power Platform</h3>
+                            <p class="certificate-issuer">Microsoft</p>
+                            <p class="certificate-date">February 2025</p>
+                            <p class="certificate-description">Implement AI models using Microsoft Power Platform AI Builder for intelligent business applications.</p>
+                        </div>
+                        <div class="certificate-actions">
+                            <a href="Nirdesh_Jain.pdf" target="_blank" class="btn btn-certificate">
+                                <i class="fas fa-certificate"></i> View Certificate
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="certificate-card">
+                        <div class="certificate-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="certificate-info">
+                            <h3>Data Warehouse in Microsoft Fabric</h3>
+                            <p class="certificate-issuer">Microsoft</p>
+                            <p class="certificate-date">February 2025</p>
+                            <p class="certificate-description">Implement data warehouse solutions using Microsoft Fabric for modern data analytics.</p>
+                        </div>
+                        <div class="certificate-actions">
+                            <a href="Nirdesh_Jain.pdf" target="_blank" class="btn btn-certificate">
+                                <i class="fas fa-certificate"></i> View Certificate
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="certificate-card">
+                        <div class="certificate-icon">
+                            <i class="fab fa-google"></i>
+                        </div>
+                        <div class="certificate-info">
+                            <h3>Google Analytics Certification</h3>
+                            <p class="certificate-issuer">Google Digital Academy</p>
+                            <p class="certificate-date">September 2024</p>
+                            <p class="certificate-description">Professional certification in Google Analytics for web analytics and data-driven decision making.</p>
+                        </div>
+                        <div class="certificate-actions">
+                            <a href="Nirdesh_Jain.pdf" target="_blank" class="btn btn-certificate">
+                                <i class="fas fa-certificate"></i> View Certificate
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="certificate-card">
+                        <div class="certificate-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <div class="certificate-info">
+                            <h3>Data Visualization with Python</h3>
+                            <p class="certificate-issuer">IBM / Cognitive Class</p>
+                            <p class="certificate-date">May 2024</p>
+                            <p class="certificate-description">Advanced data visualization techniques using Python libraries including Matplotlib, Seaborn, and Plotly.</p>
+                        </div>
+                        <div class="certificate-actions">
+                            <a href="Nirdesh_Jain.pdf" target="_blank" class="btn btn-certificate">
+                                <i class="fas fa-certificate"></i> View Certificate
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="certificate-card">
+                        <div class="certificate-icon">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <div class="certificate-info">
+                            <h3>Tableau Certified Data Analyst</h3>
+                            <p class="certificate-issuer">Udemy</p>
+                            <p class="certificate-date">December 2023</p>
+                            <p class="certificate-description">Professional certification in Tableau for data analysis, visualization, and business intelligence.</p>
+                        </div>
+                        <div class="certificate-actions">
+                            <a href="Nirdesh_Jain.pdf" target="_blank" class="btn btn-certificate">
+                                <i class="fas fa-certificate"></i> View Certificate
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="certificate-card">
+                        <div class="certificate-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="certificate-info">
+                            <h3>Full Stack Web Development</h3>
+                            <p class="certificate-issuer">freeCodeCamp</p>
+                            <p class="certificate-date">2024</p>
+                            <p class="certificate-description">Comprehensive web development certification covering HTML, CSS, JavaScript, React, Node.js, and database management.</p>
+                        </div>
+                        <div class="certificate-actions">
+                            <a href="Nirdesh_Jain.pdf" target="_blank" class="btn btn-certificate">
+                                <i class="fas fa-certificate"></i> View Certificate
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="certificate-card">
+                        <div class="certificate-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <div class="certificate-info">
+                            <h3>Data Science with Python</h3>
+                            <p class="certificate-issuer">IBM / edX</p>
+                            <p class="certificate-date">2023</p>
+                            <p class="certificate-description">Advanced certification in data science methodologies, machine learning algorithms, statistical analysis, and data visualization using Python, pandas, and scikit-learn.</p>
+                        </div>
+                        <div class="certificate-actions">
+                            <a href="Nirdesh_Jain.pdf" target="_blank" class="btn btn-certificate">
+                                <i class="fas fa-certificate"></i> View Certificate
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="certificate-card">
+                        <div class="certificate-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="certificate-info">
+                            <h3>Machine Learning Specialization</h3>
+                            <p class="certificate-issuer">Stanford University / Coursera</p>
+                            <p class="certificate-date">2024</p>
+                            <p class="certificate-description">Comprehensive specialization covering supervised learning, unsupervised learning, neural networks, and best practices in machine learning.</p>
+                        </div>
+                        <div class="certificate-actions">
+                            <a href="Nirdesh_Jain.pdf" target="_blank" class="btn btn-certificate">
+                                <i class="fas fa-certificate"></i> View Certificate
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="certificate-card">
+                        <div class="certificate-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="certificate-info">
+                            <h3>Data Analysis with R</h3>
+                            <p class="certificate-issuer">Johns Hopkins University / Coursera</p>
+                            <p class="certificate-date">2023</p>
+                            <p class="certificate-description">Statistical computing and data analysis using R programming language, including data manipulation, visualization, and statistical inference.</p>
+                        </div>
+                        <div class="certificate-actions">
+                            <a href="Nirdesh_Jain.pdf" target="_blank" class="btn btn-certificate">
+                                <i class="fas fa-certificate"></i> View Certificate
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="certificate-card">
+                        <div class="certificate-icon">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <div class="certificate-info">
+                            <h3>Data Visualization with Tableau</h3>
+                            <p class="certificate-issuer">Tableau / UC Davis</p>
+                            <p class="certificate-date">2024</p>
+                            <p class="certificate-description">Professional certification in creating interactive dashboards, data storytelling, and advanced visualization techniques using Tableau.</p>
+                        </div>
+                        <div class="certificate-actions">
+                            <a href="Nirdesh_Jain.pdf" target="_blank" class="btn btn-certificate">
+                                <i class="fas fa-certificate"></i> View Certificate
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Feel free to reach out for collaborations or just a friendly hello</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology.</p>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>jainnirdesh1@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 98106 24900</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>India</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links-contact">
+                        <a href="https://github.com/jainnirdesh" target="_blank" class="social-link-contact"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/nirdeshhjain/" target="_blank" class="social-link-contact"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://x.com/jnirdesh" target="_blank" class="social-link-contact"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/nirdeshjain_" target="_blank" class="social-link-contact"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                            <span class="error-message" id="subjectError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                            <span class="error-message" id="messageError"></span>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Nirdesh Jain. All rights reserved.</p>
+                <p>Built with ❤️ using HTML, CSS, and JavaScript | B.Tech CSE Data Science Student</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success/Error Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalMessage"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Placeholder Images</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .image-generator {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        canvas {
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+        button {
+            background: #2563eb;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button:hover {
+            background: #1d4ed8;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="gradient-bg">
+            <h1>Portfolio Image Generator</h1>
+            <p>Generate placeholder images for your portfolio</p>
+        </div>
+        
+        <div class="image-generator">
+            <h2>Profile Image Generator</h2>
+            <canvas id="profileCanvas" width="400" height="400"></canvas>
+            <br>
+            <button onclick="generateProfileImage()">Generate Profile Image</button>
+            <button onclick="downloadImage('profileCanvas', 'profile-image.jpg')">Download Profile Image</button>
+        </div>
+        
+        <div class="image-generator">
+            <h2>Project Images Generator</h2>
+            <canvas id="projectCanvas" width="400" height="250"></canvas>
+            <br>
+            <button onclick="generateProjectImage('E-commerce Website')">E-commerce Project</button>
+            <button onclick="generateProjectImage('Task Management App')">Task Management</button>
+            <button onclick="generateProjectImage('Weather App')">Weather App</button>
+            <button onclick="generateProjectImage('Student Management')">Student System</button>
+            <button onclick="generateProjectImage('Portfolio Website')">Portfolio</button>
+            <button onclick="generateProjectImage('Calculator App')">Calculator</button>
+            <br>
+            <button onclick="downloadImage('projectCanvas', 'project-image.jpg')">Download Current Image</button>
+        </div>
+    </div>
+
+    <script>
+        function generateProfileImage() {
+            const canvas = document.getElementById('profileCanvas');
+            const ctx = canvas.getContext('2d');
+            
+            // Create gradient background
+            const gradient = ctx.createLinearGradient(0, 0, 400, 400);
+            gradient.addColorStop(0, '#667eea');
+            gradient.addColorStop(1, '#764ba2');
+            
+            ctx.fillStyle = gradient;
+            ctx.fillRect(0, 0, 400, 400);
+            
+            // Add profile placeholder
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.2)';
+            ctx.beginPath();
+            ctx.arc(200, 160, 60, 0, 2 * Math.PI);
+            ctx.fill();
+            
+            // Add body
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.2)';
+            ctx.beginPath();
+            ctx.arc(200, 280, 80, 0, Math.PI);
+            ctx.fill();
+            
+            // Add text
+            ctx.fillStyle = 'white';
+            ctx.font = 'bold 24px Arial';
+            ctx.textAlign = 'center';
+            ctx.fillText('NIRDESH JAIN', 200, 350);
+            
+            ctx.font = '16px Arial';
+            ctx.fillText('Software Developer', 200, 375);
+        }
+        
+        function generateProjectImage(projectName) {
+            const canvas = document.getElementById('projectCanvas');
+            const ctx = canvas.getContext('2d');
+            
+            // Create gradient background
+            const gradients = {
+                'E-commerce Website': ['#FF6B6B', '#4ECDC4'],
+                'Task Management App': ['#A8E6CF', '#3498DB'],
+                'Weather App': ['#87CEEB', '#4682B4'],
+                'Student Management': ['#FFD93D', '#FF6B35'],
+                'Portfolio Website': ['#667eea', '#764ba2'],
+                'Calculator App': ['#2C3E50', '#3498DB']
+            };
+            
+            const colors = gradients[projectName] || ['#667eea', '#764ba2'];
+            const gradient = ctx.createLinearGradient(0, 0, 400, 250);
+            gradient.addColorStop(0, colors[0]);
+            gradient.addColorStop(1, colors[1]);
+            
+            ctx.fillStyle = gradient;
+            ctx.fillRect(0, 0, 400, 250);
+            
+            // Add project icon/symbol
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.3)';
+            ctx.font = 'bold 48px Arial';
+            ctx.textAlign = 'center';
+            
+            const icons = {
+                'E-commerce Website': '🛒',
+                'Task Management App': '📋',
+                'Weather App': '🌤️',
+                'Student Management': '🎓',
+                'Portfolio Website': '💼',
+                'Calculator App': '🔢'
+            };
+            
+            ctx.fillText(icons[projectName] || '💻', 200, 100);
+            
+            // Add project name
+            ctx.fillStyle = 'white';
+            ctx.font = 'bold 20px Arial';
+            ctx.fillText(projectName, 200, 150);
+            
+            // Add tech stack indicator
+            ctx.font = '14px Arial';
+            ctx.fillText('HTML • CSS • JavaScript', 200, 180);
+            
+            // Add decorative elements
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.1)';
+            for (let i = 0; i < 20; i++) {
+                ctx.beginPath();
+                ctx.arc(Math.random() * 400, Math.random() * 250, Math.random() * 3, 0, 2 * Math.PI);
+                ctx.fill();
+            }
+        }
+        
+        function downloadImage(canvasId, filename) {
+            const canvas = document.getElementById(canvasId);
+            const link = document.createElement('a');
+            link.download = filename;
+            link.href = canvas.toDataURL();
+            link.click();
+        }
+        
+        // Generate initial images
+        generateProfileImage();
+        generateProjectImage('E-commerce Website');
+    </script>
+</body>
+</html>

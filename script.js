@@ -570,3 +570,25 @@ const additionalCSS = `
 const styleSheet = document.createElement('style');
 styleSheet.textContent = additionalCSS;
 document.head.appendChild(styleSheet);
+
+// Testimonial toggle functionality
+function toggleTestimonial(button) {
+    const testimonialCard = button.closest('.testimonial-card');
+    const preview = testimonialCard.querySelector('.testimonial-preview');
+    const full = testimonialCard.querySelector('.testimonial-full');
+    const icon = button.querySelector('i');
+    
+    if (full.style.display === 'none') {
+        // Show full testimonial
+        preview.style.display = 'none';
+        full.style.display = 'inline';
+        button.innerHTML = '<i class="fas fa-chevron-up"></i> Read Less';
+        button.classList.add('expanded');
+    } else {
+        // Show preview
+        preview.style.display = 'inline';
+        full.style.display = 'none';
+        button.innerHTML = '<i class="fas fa-chevron-down"></i> Read More';
+        button.classList.remove('expanded');
+    }
+}

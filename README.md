@@ -182,10 +182,10 @@ While this is a personal portfolio, suggestions and improvements are welcome:
 This project is open source and available under the [MIT License](LICENSE).
 
 ## 📞 Contact
-- **Email**: nirdesh.jain@example.com
-- **GitHub**: [Your GitHub Profile]
-- **LinkedIn**: [Your LinkedIn Profile]
-- **Portfolio**: [Your Portfolio URL]
+- **Email**: jainnirdesh1@gmail.com
+- **GitHub**: https://github.com/jainnirdesh
+- **LinkedIn**: https://www.linkedin.com/in/nirdeshhjain/
+- **Portfolio**: https://nirdeshjain-portfolio-8974.vercel.app
 
 ---
 

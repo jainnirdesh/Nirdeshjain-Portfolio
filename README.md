@@ -187,10 +187,6 @@ This project is open source and available under the [MIT License](LICENSE).
 - **LinkedIn**: https://www.linkedin.com/in/nirdeshhjain/
 - **Portfolio**: https://nirdeshjain-portfolio-8974.vercel.app
 
----
-
-**Note**: Remember to replace placeholder content with your actual information and update the project links with your real repositories and live demos.
-
 ## 🎉 Acknowledgments
 - Font Awesome for icons
 - Google Fonts for typography

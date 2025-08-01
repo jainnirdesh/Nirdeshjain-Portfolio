@@ -14,11 +14,27 @@ function initNavigation() {
     const navToggle = document.querySelector('.nav-toggle');
     const navMenu = document.querySelector('.nav-menu');
     const navLinks = document.querySelectorAll('.nav-link');
+    const body = document.body;
 
     // Mobile menu toggle
-    navToggle.addEventListener('click', function() {
+    navToggle.addEventListener('click', function(e) {
+        e.stopPropagation();
+        const isMenuOpen = navMenu.classList.contains('active');
+        
         navMenu.classList.toggle('active');
         navToggle.classList.toggle('active');
+        
+        // Prevent body scroll when menu is open
+        if (!isMenuOpen) {
+            body.style.overflow = 'hidden';
+            // Focus first menu item for accessibility
+            setTimeout(() => {
+                const firstLink = navMenu.querySelector('.nav-link');
+                if (firstLink) firstLink.focus();
+            }, 300);
+        } else {
+            body.style.overflow = '';
+        }
     });
 
     // Close mobile menu when clicking on a link
@@ -26,7 +42,35 @@ function initNavigation() {
         link.addEventListener('click', function() {
             navMenu.classList.remove('active');
             navToggle.classList.remove('active');
+            body.style.overflow = '';
         });
+    });
+
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!navMenu.contains(e.target) && !navToggle.contains(e.target)) {
+            navMenu.classList.remove('active');
+            navToggle.classList.remove('active');
+            body.style.overflow = '';
+        }
+    });
+
+    // Close mobile menu on window resize if screen becomes larger
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 768) {
+            navMenu.classList.remove('active');
+            navToggle.classList.remove('active');
+            body.style.overflow = '';
+        }
+    });
+
+    // Handle escape key to close menu
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && navMenu.classList.contains('active')) {
+            navMenu.classList.remove('active');
+            navToggle.classList.remove('active');
+            body.style.overflow = '';
+        }
     });
 
     // Active navigation highlighting

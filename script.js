@@ -16,6 +16,11 @@ function initNavigation() {
     const navLinks = document.querySelectorAll('.nav-link');
     const body = document.body;
 
+    if (!navToggle || !navMenu) {
+        console.error('Navigation elements not found');
+        return;
+    }
+
     // Mobile menu toggle
     navToggle.addEventListener('click', function(e) {
         e.stopPropagation();

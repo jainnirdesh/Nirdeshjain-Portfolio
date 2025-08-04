@@ -89,9 +89,14 @@ body {
     display: none;
     flex-direction: column;
     cursor: pointer;
-    padding: 0.5rem;
+    padding: 0.75rem;
     border-radius: 4px;
     transition: background-color 0.3s ease;
+    min-width: 44px;
+    min-height: 44px;
+    justify-content: center;
+    align-items: center;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .nav-toggle:hover {
@@ -99,10 +104,10 @@ body {
 }
 
 .bar {
-    width: 25px;
+    width: 24px;
     height: 3px;
-    background-color: #333;
-    margin: 3px 0;
+    background-color: #2563eb;
+    margin: 2px 0;
     transition: all 0.3s ease;
     border-radius: 2px;
 }
@@ -1261,6 +1266,14 @@ body {
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
+    .navbar {
+        padding: 0.8rem 0;
+    }
+
+    .nav-container {
+        padding: 0 20px;
+    }
+
     .nav-menu {
         position: fixed;
         left: -100%;
@@ -1275,6 +1288,7 @@ body {
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.1);
         padding: 3rem 0;
         z-index: 999;
+        overflow-y: auto;
     }
 
     .nav-menu.active {
@@ -1283,6 +1297,10 @@ body {
 
     .nav-menu li {
         margin: 1.5rem 0;
+    }
+
+    .nav-menu.active li {
+        opacity: 1;
     }
 
     .nav-link {
@@ -1301,18 +1319,29 @@ body {
     .nav-toggle {
         display: flex;
         z-index: 1001;
+        position: relative;
+        padding: 8px;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+    }
+
+    .nav-toggle:hover {
+        background-color: rgba(37, 99, 235, 0.1);
     }
 
     .nav-toggle.active .bar:nth-child(2) {
         opacity: 0;
+        transform: translateX(20px);
     }
 
     .nav-toggle.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
+        transform: translateY(5px) rotate(45deg);
+        background-color: #2563eb;
     }
 
     .nav-toggle.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-5px) rotate(-45deg);
+        background-color: #2563eb;
     }
 
     .hero-content {
